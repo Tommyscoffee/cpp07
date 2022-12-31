@@ -30,8 +30,6 @@ template < class T > Array<T>::Array( const Array<T> &obj ) : _size(0), array(nu
 }
 
 
-
-
 // member functions
 
 template < class T > unsigned int Array<T>::size( void ) const

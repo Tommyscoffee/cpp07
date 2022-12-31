@@ -25,10 +25,11 @@
 // 		std::cout << "fugafuga[i] = " << fugafuga[i] << std::endl;
 // 	}
 // }
-#define MAX_VAL 750
+#define MAX_VAL 7
 
 int main(int, char**)
 {
+	Array<int> empty;
     Array<int> numbers(MAX_VAL);
     int* mirror = new int[MAX_VAL];
     srand(time(NULL));
@@ -37,6 +38,8 @@ int main(int, char**)
         const int value = rand();
         numbers[i] = value;
         mirror[i] = value;
+		numbers[i]=  1;
+		std::cout << "numbers " << i << " " << numbers[i] << std::endl;
     }
     //SCOPE
     {
